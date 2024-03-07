@@ -1,30 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
-:root{
-    --darkblue:#00034F;
-    --white:#FFF8E8;
-    --skyblue:#4CD3DF;
-    --navfontsize:26px;
-    --fontroboto:roboto;
-    --black:rgb(67, 61, 61);
-    --green:#00BFA6;
+
+:root {
+    --darkblue: #00034F;
+    --white: #FFF8E8;
+    --skyblue: #4CD3DF;
+    --navfontsize: 26px;
+    --fontroboto: roboto;
+    --black: rgb(67, 61, 61);
+    --green: #00BFA6;
 }
-body{
-    background-color:var(--black);
-    font-family:Roboto;
+
+body {
+    background-color: var(--black);
+    font-family: Roboto;
     color: var(--white);
-    
-    
+    overflow-x: hidden;
+    scrollbar-color: red;
+
 }
-#spank{
+
+#spank {
     color: var(--green);
 }
-#nav{
+
+#nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,51 +39,58 @@ body{
     width: 100vw;
     height: 9vh;
     position: fixed;
-   background-color: transparent;
+    background-color: transparent;
     margin: 0;
     z-index: 1;
-   
+    overflow-y: hidden;
+
 }
-#logo{
+
+#logo {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 20px;
     cursor: pointer;
-   
+
 }
+
 nav ul {
     list-style: none;
     width: 40vw;
     display: flex;
     justify-content: space-around;
     font-size: 18px;
-   
-   
+
+
 }
-nav ul a{
+
+nav ul a {
     color: #FFF8E8;
     text-decoration: none;
 }
 
-nav ul li{
+nav ul li {
     padding-bottom: 10px;
-   transition: border-bottom ;
+    transition: border-bottom;
 }
-nav ul li:hover{
-    
+
+nav ul li:hover {
+
     /* border-bottom: 3px  solid var(--green); */
     cursor: pointer;
 
 }
-#menubar{
+
+#menubar {
     width: 2%;
     margin-right: 1%;
-   display: none;
-    
-    
+    display: none;
+
+
 }
-#menubar>*{
+
+#menubar>* {
     width: 100%;
     height: 100%;
     align-items: center;
@@ -85,104 +99,113 @@ nav ul li:hover{
 /* #menubar{
     background-color: #FFF8E8;
 } */
-#mobilediv{
-   display: none;
+#mobilediv {
+    display: none;
 }
-#mobilemenu{
- 
-   position: fixed;
-   right: 2%;
-   z-index: 2;
-   margin-top: 5%;
-   height: 40%;
-   
-   padding-left: 2%;
-   padding-right: 2%;
-   padding-bottom: 2%;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   text-align: center;
-   border-radius: 5px;
-   background-color: rgb(0, 191, 166,.3);
-   /* visibility: hidden; */
-   padding-top: 0.5%;
- 
+
+#mobilemenu {
+
+    position: fixed;
+    right: 2%;
+    z-index: 2;
+    margin-top: 5%;
+    height: 40%;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(0, 191, 166, .3);
+    /* visibility: hidden; */
+    padding-top: 0.5%;
+
 }
+
 .fa-solid {
-  
-   width: 100%;
-   text-align: right;
-   height: 10%;
-  
-   
+
+    width: 100%;
+    text-align: right;
+    height: 10%;
+
+
 }
-#mobilemenu a{
+
+#mobilemenu a {
     text-decoration: none;
     list-style-type: none;
     color: #FFF8E8;
     padding: 5px;
- 
+
     width: 100%;
-   
+
 
 }
-#mobilemenu a li{
+
+#mobilemenu a li {
     width: 100%;
 }
-nav ul a:active{
+
+nav ul a:active {
     color: var(--green);
 }
-#content{
+
+#content {
     height: 91vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-   
-    
-   
+    overflow-y: hidden;
+
+
+
+
 }
-#text{
-    
+
+#text {
+
     width: 50vw;
-    height:100% ;
-   font-family: Roboto;
+    height: 100%;
+    font-family: Roboto;
     font-size: 30px;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 9vh;
-    
+
 }
-#textalign{
+
+#textalign {
     width: 100%;
-    height:100% ;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: last baseline  baseline;
+    align-items: last baseline baseline;
     padding: 5% 10%;
     margin-left: 20%;
-    
+
 
 }
 
 
-#describe p{
+#describe p {
     font-size: 15px;
     list-style: none;
     width: 100%;
     align-items: center;
     margin-top: 10%;
     color: var(--green);
-    
+
 }
 
-#imgage{
+#imgage {
     width: 50vw;
     height: 91vh;
     background-color: rgb(67, 61, 61);
@@ -190,56 +213,68 @@ nav ul a:active{
     justify-content: center;
     align-items: center;
     margin-top: 9vh;
-   
+
 }
-#imgage img{
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+
+#imgage img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
+
 #about {
     width: 100%;
-    height:91vh ;
-    background-color:var(--black);
+    height: 91vh;
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#secimg{
+#secimg {
     width: 50%;
     height: 100%;
-   
+    overflow-y: hidden;
+
 }
-#seccon{
+
+#seccon {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-#secdiv{
-    width: 80%;
-    height: 80%;
+
+#secdiv {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
-#forme{
+
+#forme {
     width: 100%;
     height: 40%;
-    padding: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+
 }
-#forme h4{
+
+#forme h4 {
     color: var(--green);
 }
-#forme p{
+
+#forme p {
     margin-top: 2%;
 }
-#title{
-   
+
+#title {
+
     height: 10%;
     width: 100%;
     display: flex;
@@ -248,65 +283,74 @@ nav ul a:active{
     justify-content: space-between;
     padding: 0% 20%;
     cursor: pointer;
-    }
-#title li{
-    
+}
+
+#title li {
+
     padding: 10px;
 }
 
-#title li:hover{
+#title li:hover {
     border-bottom: 3px solid var(--green);
-    
+
 }
-#describe2{
-   
+
+#describe2 {
+
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
-    align-items:center ;
- 
+    align-items: center;
+
 }
-#skiltitle{
+
+#skiltitle {
     border-bottom: 3px solid var(--green);
 }
-#skilldiv{
+
+#skilldiv {
     width: 50%;
     height: 80%;
-   
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:start ;
+    justify-content: start;
     display: block;
-    
+
 }
-#skilldiv >*{
+
+#skilldiv>* {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
     text-align: center;
     padding: 5px;
-    
+
 }
-#skilldiv >* p{
+
+#skilldiv>* p {
     width: 50%;
-    text-align:start;
+    text-align: start;
     color: var(--green);
-    
-   
+
+
 }
-#skilldiv >* progress{
+
+#skilldiv>* progress {
     width: 50%;
     padding-right: 10%;
     /* background-color: var(--green); */
-    
+
 }
-.progress{
+
+.progress {
     accent-color: var(--green);
 }
-#cetrifi{
+
+#cetrifi {
     width: 60%;
     height: 80%;
     display: flex;
@@ -315,39 +359,48 @@ nav ul a:active{
     align-items: center;
     justify-content: center;
     display: none;
-   
-    
-    
+
+
+
 }
-#cetrifi>*{
-    border:0.1px solid var(--green) ;
+
+#cetrifi>* {
+    border: 0.1px solid var(--green);
     width: 100%;
     height: 40%;
-   
+
     padding: 5px;
     border-radius: 5px;
     background-color: var(--green);
-    background-color: rgb(0, 191, 166,.2);
-    
+    background-color: rgb(0, 191, 166, .2);
+
     margin-top: 5px;
-   
-    
+
+
 }
-#sec>*,#first>*{
-padding: 2px;
+
+#sec>*,
+#first>* {
+    padding: 2px;
 }
-#sec a,#first a{
+
+#sec a,
+#first a {
     color: #FFF8E8;
     text-decoration: none;
     font-size: 15px;
 }
-#sec p,#first p{
+
+#sec p,
+#first p {
     font-size: 15px;
 }
-#edu{
+
+#edu {
     display: none;
 }
-#edudetail{
+
+#edudetail {
     width: 100%;
     height: 100%;
     display: flex;
@@ -355,19 +408,21 @@ padding: 2px;
     align-items: start;
     justify-content: center;
     gap: 5px;
-   
+
 }
-#edudetail>*{
-    border:0.1px solid var(--green) ;
+
+#edudetail>* {
+    border: 0.1px solid var(--green);
     width: 100%;
     height: 90%;
     padding: 5px;
     border-radius: 5px;
     background-color: var(--green);
-    background-color: rgb(0, 191, 166,.2);
+    background-color: rgb(0, 191, 166, .2);
     gap: 5%;
 }
-#edudetail p{
+
+#edudetail p {
     padding: 2px;
     font-size: 15px;
 }
@@ -375,7 +430,7 @@ padding: 2px;
 
 
 
-#project{
+#project {
     width: 100vw;
     height: 91vh;
     display: flex;
@@ -384,75 +439,82 @@ padding: 2px;
     text-align: center;
     gap: 5%;
     padding: 5px;
-    
-    
 
-    
+
+
+
 }
-#project>*{
+
+#project>* {
     width: 25%;
-    height: 80%;
+    height: 100%;
     border: 2px solid var(--green);
-   border-radius: 5px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color:rgb(0, 191, 166,.1) ;
+    background-color: rgb(0, 191, 166, .1);
+    overflow-y: hidden;
 }
-#project> :hover{
+
+#project> :hover {
     box-shadow: 0px 0px 50px var(--green);
 
 }
-#project>* div{
+
+#project>* div {
     width: 80%;
     height: 50%;
-    
+
 }
-#project h4{
+
+#project h4 {
     text-shadow: 0px 0px 10px white;
 }
 
 
-#div1{
-    background: url("img/dt1.png") ;
+#div1 {
+    background: url("img/dt1.png");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     border: 1px solid var(--green);
     border-radius: 5px;
     position: relative;
-    transition: bacground  1s ease-in-out;
+    transition: bacground 1s ease-in-out;
 
 
 }
-#div2{
-    background: url("img/todo1.png") ;
+
+#div2 {
+    background: url("img/todo1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid var(--green);
     border-radius: 5px;
     position: relative;
-    transition: bacground  1s ease-in-out;
+    transition: bacground 1s ease-in-out;
 
 
 }
-#div3{
-    background: url("img/cal1.png") ;
+
+#div3 {
+    background: url("img/cal1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid var(--green);
     border-radius: 5px;
     position: relative;
-    transition: bacground  1s ease-in-out;
+    transition: bacground 1s ease-in-out;
 
 
 }
 
-.btn-left{
+.btn-left {
     position: absolute;
     top: 50%;
     left: -2%;
@@ -462,7 +524,8 @@ padding: 2px;
     transform: translateY(calc(-50%));
     cursor: pointer;
 }
-.btn-right{
+
+.btn-right {
     position: absolute;
     top: 50%;
     right: -2%;
@@ -474,15 +537,16 @@ padding: 2px;
 }
 
 
-#contact{
+#contact {
     width: 100vw;
     height: 91vh;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#left{
+
+#left {
     width: 50%;
     height: 100%;
     display: flex;
@@ -490,70 +554,98 @@ padding: 2px;
     justify-content: center;
     align-items: center;
     gap: 5%;
-  
-    
-    
+
+
+
 }
-#conright{
+
+#conright {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-   
+
 
 }
-#conimg{
+
+#conimg {
     width: 100%;
-    height:50% ;
+    height: 50%;
+    overflow-y: hidden;
 }
-#conimg a{
+
+#conimg a {
     width: 100%;
     height: 100%;
 
     overflow: hidden;
 
 }
-.animated{
+
+.animated {
     width: 100%;
     height: 100%;
 }
-#condetail{
+
+#condetail {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap:10%;
-   
+    gap: 10%;
+    
+
 }
-#condetail a{
+
+#condetail a {
     text-decoration: none;
     color: #FFF8E8;
 }
-.tomar{
+
+.tomar {
     margin-right: 10px;
+    display: inline-block;
 }
-#conicon{
+
+#conicon {
     display: flex;
-    width: 50%;
+    width: 90%;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
     
+
 }
-#conicon a{
+
+#conicon a {
     background-color: #FFF8E8;
-    padding: 10px;
+    
+    padding: 15px;
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid var(--green);
+    text-decoration: none;
+    
+
+}
+#conicon >a >i{
+    /* background-color: red;
+
+     */
+     overflow-x: visible;
+     
+
+     
    
 }
-#conicon a:active{
+
+#conicon a:active {
     box-shadow: 0px 0px 10px white;
 }
-#dwdres{
+
+#dwdres {
     padding: 10px;
     border-radius: 5px;
     outline: none;
@@ -563,12 +655,14 @@ padding: 2px;
     border: 1px solid white;
 
 }
-#dwdres:active{
+
+#dwdres:active {
     box-shadow: 0px 0px 10px white;
 }
+
 form {
-   
-    
+
+
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -576,12 +670,13 @@ form {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color:rgb(0, 191, 166,.3);
+    background-color: rgb(0, 191, 166, .3);
     padding: 1em;
     border-radius: 10px;
-    
+
 }
-form>:not(:last-child){
+
+form>:not(:last-child) {
     width: 80%;
     height: 10%;
     padding: 1em;
@@ -590,14 +685,17 @@ form>:not(:last-child){
     outline: none;
     border-radius: 5px;
     letter-spacing: 1px;
+    overflow-y: hidden;
 
 }
-form>:first-child{
+
+form>:first-child {
     font-size: 30px;
     margin-bottom: 30px;
-    
+
 }
-form>:last-child{
+
+form>:last-child {
     padding: 1em;
     background-color: var(--green);
     outline: none;
@@ -605,263 +703,346 @@ form>:last-child{
     color: #FFF8E8;
     border-radius: 5px;
 }
-form button:active{
+
+form button:active {
     box-shadow: 0px 0px 20px white;
 }
-.active{
+
+.active {
     border-bottom: 3px solid var(--green);
 }
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
     nav ul {
         font-size: 10px;
     }
-    #log{
+
+    #log {
         font-size: 20px;
     }
-    #textalign{
+
+    #textalign {
         margin-left: 0;
     }
-    #type{
+
+    #type {
         font-size: 20px;
     }
-    #describe p{
+
+    #describe p {
         text-align: justify;
     }
+
     #secimg {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #forme{
+
+    #forme {
         font-size: 11px;
         text-align: justify;
     }
-    #title{
+
+    #title {
         padding: 0;
     }
-    #skilldiv{
+
+    #skilldiv {
         width: 100%;
     }
-    
-#cetrifi{
-    width: 100%;
-}
-#edu{
-    width: 100%;
-    height: 100%;
-    margin-top: 2%;
-}
-#edudetail p{
-    font-size: 10px;
-}
-h4{
-    font-size: 15px;
-}
-#project {
-    gap: 2%;
-    
-}
-#project>*{
-    width: 30%;
-    height: 100%;
-}
-#project>* p{
-    font-size: 13px;
-    text-align: justify;
-    padding: 5%;
-}
-#project>* a{
-    text-decoration: none;
-    color: #FFF8E8;
-}
-#condetail{
-    gap: 5%;
-}
-#condetail a{
-    font-size: 12px;
-}
-.fa-solid{
-    width: 10%;
-}
-form>:first-child{
-    font-size: 20px;
-}
 
-}
+    #cetrifi {
+        width: 100%;
+    }
 
-@media screen and (max-width:425px){
-    #logo{
+    #edu {
+        width: 100%;
+        height: 100%;
+        margin-top: 2%;
+    }
+
+    #edudetail p {
+        font-size: 10px;
+    }
+
+    h4 {
         font-size: 15px;
     }
-    #mobilemenu{
+
+    #project {
+        gap: 2%;
+
+    }
+    #project{
+        overflow-y: hidden;
+    }
+
+    #project>* {
+        width: 30%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    #project>* p {
+        font-size: 13px;
+        text-align: justify;
+        padding: 5%;
+    }
+
+    #project>* a {
+        text-decoration: none;
+        color: #FFF8E8;
+    }
+
+    #condetail {
+        gap: 5%;
+    }
+
+    #condetail a {
+        font-size: 12px;
+    }
+
+    .fa-solid {
+        width: 7px;
+    }
+
+    form>:first-child {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    body{
+        overflow-x: hidden;
+    }
+    #logo {
+        font-size: 15px;
+    }
+
+    #mobilemenu {
         right: 35vw;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    #menubar{
+
+    #menubar {
         display: block;
+        width: 5%;
     }
-    #content{
+
+    #content {
         height: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height:fit-content ;
     }
-    #text{
+
+    #text {
         width: 100vw;
-        margin-top: 12vh;
+        margin-top: 15vh;
     }
-    #textalign{
+
+    #textalign {
         padding: 5% 5%;
     }
-    #type{
+
+    #type {
         font-size: 20px;
         text-align: center;
     }
-    #describe p{
+
+    #describe p {
         font-size: 12px;
     }
-    #imgage{
+
+    #imgage {
         width: 80vw;
         margin-top: 0;
     }
-    #about{
+
+    #about {
         height: fit-content;
         flex-direction: column-reverse;
         margin-top: 10%;
-        
+
     }
-    #secimg{
+
+    #secimg {
         width: 100%;
         height: fit-content;
-       
+
     }
-    #seccon{
+
+    #seccon {
         width: 100vw;
         height: fit-content;
         margin-bottom: 5%;
-       
+
     }
+
     #secdiv {
         width: 90vw;
         height: fit-content;
     }
-    #skilldiv{
+
+    #skilldiv {
         height: none;
     }
-    #forme{
+
+    #forme {
         height: none;
     }
-    #title{
+
+    #title {
         height: none;
     }
+
     #title>* {
         font-size: 12px;
-        
+
     }
-    #describe2{
+
+    #describe2 {
         height: none;
     }
-    #skilldiv >*{
+
+    #skilldiv>* {
         padding: 2px;
         font-size: 12px;
     }
-    #cetrifi{
+
+    #cetrifi {
         height: none;
     }
-    #cetrifi>*{
+
+    #cetrifi>* {
         height: none;
         margin-top: 2px;
         padding: 2px;
     }
-    #first>*{
+
+    #first>* {
         font-size: 12px;
-        
+
         padding: 1px;
     }
-    #first> p,#first> a{
-        
+
+    #first>p,
+    #first>a {
+
         font-size: 10px;
     }
-    #sec>*{
+
+    #sec>* {
         height: none;
         margin-top: 2px;
         padding: 1px;
 
     }
-    #sec>h4{
-      
+
+    #sec>h4 {
+
         font-size: 12px;
     }
-    #sec> p,#sec> a{
+
+    #sec>p,
+    #sec>a {
         font-size: 10px;
     }
-    #edu{
+
+    #edu {
         height: none;
 
     }
-    #edudetail{
+
+    #edudetail {
         gap: 2px;
     }
-    #edudetail>*{
+
+    #edudetail>* {
         padding: 2px;
     }
-    #edudetail>* h4{
-       
+
+    #edudetail>* h4 {
+
         font-size: 12px;
     }
 
     #project {
-        height:fit-content;
+        height: fit-content;
         flex-direction: column;
         margin-top: 2%;
         gap: 2vh;
     }
-    #project>*{
+
+    #project>* {
         width: 80vw;
         height: 450px;
-        
+
         padding-top: 10px;
     }
-    #project>* div{
+
+    #project>* div {
         height: 200px;
         margin: 10px;
         margin: 10px;
     }
-    #contact{
+
+    #contact {
         height: fit-content;
         flex-direction: column;
         gap: 2vh;
         margin-bottom: 10vh;
     }
-    #left{
+
+    #left {
         width: 100vw;
         height: fit-content;
         gap: 4vh;
     }
-    #condetail{
-        gap:4vh;
+
+    #condetail {
+        gap: 4vh;
     }
-    #conright{
+
+    #conright {
         width: 100vw;
         height: fit-content;
     }
-    form{
+
+    form {
         width: 90%;
         height: 400px;
         padding: 3px;
         margin-top: 5vh;
     }
-    form>:first-child{
+
+    form>:first-child {
         margin-bottom: 0;
     }
-    form>:not(:last-child){
+
+    form>:not(:last-child) {
         width: 80vw;
         margin-bottom: 10px;
+    }
+    #conicon>a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    #conicon>a>i{
+        width: 10px;
     }
 
 
@@ -869,180 +1050,259 @@ form>:first-child{
 
 
 
-@media screen and (max-width:321px){
-    #logo{
+@media screen and (max-width:321px) {
+    body{
+        overflow-x: hidden;
+    }
+    #logo {
         font-size: 15px;
     }
-    #mobilemenu{
-        right: 35vw;
+
+    #mobilemenu {
+        right: 5vw;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    #menubar{
+
+    #menubar {
         display: block;
     }
-    #content{
+
+    #content {
         height: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    #text{
+
+    #text {
         width: 100vw;
         margin-top: 12vh;
     }
-    #textalign{
+
+    #textalign {
         padding: 5% 5%;
     }
-    #type{
+
+    #type {
         font-size: 15px;
         text-align: center;
     }
-    #describe p{
-        font-size: 12px;
+
+    #describe p {
+        font-size: 10px;
     }
-    #imgage{
+
+    #imgage {
         width: 80vw;
         margin-top: 0;
+        height: fit-content;
     }
-    #about{
+
+    #about {
         height: fit-content;
         flex-direction: column-reverse;
         margin-top: 10%;
-        
+
     }
-    #secimg{
+
+    #secimg {
         width: 100%;
         height: fit-content;
-       
+
     }
-    #seccon{
+
+    #seccon {
         width: 100vw;
         height: fit-content;
         margin-bottom: 5%;
-       
+
     }
+    #pro3>p{
+        overflow-y: hidden;
+    }
+
     #secdiv {
         width: 90vw;
         height: fit-content;
     }
-    #skilldiv{
+
+    #skilldiv {
         height: none;
     }
-    #forme{
+
+    #forme {
         height: none;
     }
-    #title{
+
+    #title {
         height: none;
     }
+
     #title>* {
         font-size: 12px;
-        
+
     }
-    #describe2{
+
+    #describe2 {
         height: none;
+        margin-top: 10px;
     }
-    #skilldiv >*{
+
+    #skilldiv>* {
         padding: 2px;
         font-size: 12px;
     }
-    #cetrifi{
+
+    #cetrifi {
         height: none;
     }
-    #cetrifi>*{
+
+    #cetrifi>* {
         height: none;
         margin-top: 2px;
         padding: 2px;
     }
-    #first>*{
+
+    #first>* {
         font-size: 12px;
-        
+
         padding: 1px;
     }
-    #first> p,#first> a{
-        
+
+    #first>p,
+    #first>a {
+
         font-size: 10px;
     }
-    #sec>*{
+
+    #sec>* {
         height: none;
         margin-top: 2px;
         padding: 1px;
 
     }
-    #sec>h4{
-      
+
+    #sec>h4 {
+
         font-size: 12px;
     }
-    #sec> p,#sec> a{
+
+    #sec>p,
+    #sec>a {
         font-size: 10px;
     }
-    #edu{
+
+    #edu {
         height: none;
 
     }
-    #edudetail{
+
+    #edudetail {
         gap: 2px;
     }
-    #edudetail>*{
+
+    #edudetail>* {
         padding: 2px;
     }
-    #edudetail>* h4{
-       
+
+    #edudetail>* h4 {
+
         font-size: 12px;
     }
 
     #project {
-        height:fit-content;
+        height: fit-content;
         flex-direction: column;
         margin-top: 2%;
         gap: 2vh;
+        overflow-y: hidden;
     }
-    #project>*{
+
+    #project>* {
         width: 80vw;
         height: 450px;
-        
+
         padding-top: 10px;
     }
-    #project>* div{
+
+    #project>* div {
         height: 200px;
         margin: 10px;
         margin: 10px;
     }
-    #contact{
+    
+
+    #contact {
         height: fit-content;
         flex-direction: column;
         gap: 2vh;
         margin-bottom: 10vh;
     }
-    #left{
+
+    #left {
         width: 100vw;
         height: fit-content;
         gap: 4vh;
     }
-    #condetail{
-        gap:4vh;
+
+    #condetail {
+        gap: 4vh;
     }
-    #conright{
+
+    #conright {
         width: 100vw;
         height: fit-content;
     }
-    form{
+
+    form {
         width: 90%;
         height: 400px;
         padding: 3px;
         margin-top: 5vh;
     }
-    form>:first-child{
+
+    form>:first-child {
         margin-bottom: 0;
     }
-    form>:not(:last-child){
+
+    form>:not(:last-child) {
         width: 80vw;
         margin-bottom: 10px;
     }
+    .tomar{
+        width: 100%;
+    }
+    .tomar>i{
+        width: 40%;
+    }
+ 
+    #conicon{
+        width: 70%;
+    }
+    #conicon>a{
+        padding: 15px;
+    }
+    
+    
 
 
 }
-
-
-
+@media screen and (max-width:426px){
+    #text{
+        height: fit-content;
+    }
+   #type{
+    height: fit-content;
+   }
+   #describe{
+    height: fit-content;
+   }
+   #textalign{
+    height: fit-content;
+   }
+  
+    
+}
