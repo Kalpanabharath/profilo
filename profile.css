@@ -868,6 +868,7 @@ form button:active {
     #imgage {
         width: 80vw;
         margin-top: 0;
+        height: fit-content;
     }
 
     #about {
